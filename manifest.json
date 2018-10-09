@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+
+  "name": "FlexGrid",
+  "description": "Displays a grid over the webpage to help design",
+  "version": "0.1",
+
+  "icons": {
+    "16": "images/icon-16.png",
+    "128": "images/icon-128.png"
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "16": "images/icon-16.png",
+      "24": "images/icon-24.png",
+      "32": "images/icon-32.png"
+    },
+    "default_title": "FlexGrid",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*",
+    "file://*/*",
+    "storage",
+    "activeTab"
+  ],
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
